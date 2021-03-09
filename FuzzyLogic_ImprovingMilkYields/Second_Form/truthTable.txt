@@ -1,0 +1,35 @@
+parallel	h	fa	should
+parallel	h	fi	should
+parallel	h	slow	COULD
+
+parallel	ok	fa	should
+parallel	ok	fi	should
+parallel	ok	slow	COULD
+
+parallel	low	fa	could
+parallel	low	fi	should
+parallel	low	slow	should
+
+neutral	h	fa	should
+neutral	h	fi	should
+neutral	h	slow	could
+
+neutral	ok	fa	should
+neutral	ok	fi	should
+neutral	ok	slow	could
+
+neutral	low	fa	should
+neutral	low	fi	should
+neutral	low	slow	could
+
+opposite	h	fa	could
+opposite	h	fi	could
+opposite	h	slow	unable
+
+opposite	ok	fa	should
+opposite	ok	fi	could
+opposite	ok	slow	unable
+
+opposite	low	fa	should
+opposite	low	fi	could
+opposite	low	slow	unable
