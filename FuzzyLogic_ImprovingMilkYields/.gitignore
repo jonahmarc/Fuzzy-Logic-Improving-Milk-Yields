@@ -1,0 +1,6 @@
+### Debugging ###
+obj/Debug
+
+### Custom user settings ###
+FuzzyLogic.csproj.user
+

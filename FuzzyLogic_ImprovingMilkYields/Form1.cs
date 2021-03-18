@@ -33,7 +33,6 @@ namespace FuzzyLogic
             AddMembers();
             SetRules();
             res = fuzz.Defuzzify();
-            //richTextBox1.Text = string.Format("{0:0.00}\n", res);
 
             do
             {
@@ -45,34 +44,38 @@ namespace FuzzyLogic
                 }
                 else if (res < 28 && res > 22)
                 {
-                    ndf -= 0.1;
-                    label7.Text = Convert.ToString(ndf);
-                    GetData();
-                    res = fuzz.Defuzzify();
-                    textBox3.Text = string.Format("{0:0.00}", res);
-                }
-                else if (res < 22)
-                {
-                    ndf -= 0.5;
-                    label7.Text = Convert.ToString(ndf);
-                    GetData();
-                    res = fuzz.Defuzzify();
-                    textBox3.Text = string.Format("{0:0.00}", res);
-                }
-                else if (res > 33 && res < 40)
-                {
                     ndf += 0.1;
                     label7.Text = Convert.ToString(ndf);
                     GetData();
                     res = fuzz.Defuzzify();
+                    check = 0;
                     textBox3.Text = string.Format("{0:0.00}", res);
                 }
-                else if (res > 40)
+                else if (res < 22)
                 {
                     ndf += 0.5;
                     label7.Text = Convert.ToString(ndf);
                     GetData();
                     res = fuzz.Defuzzify();
+                    check = 0;
+                    textBox3.Text = string.Format("{0:0.00}", res);
+                }
+                else if (res > 33 && res < 40)
+                {
+                    ndf -= 0.1;
+                    label7.Text = Convert.ToString(ndf);
+                    GetData();
+                    res = fuzz.Defuzzify();
+                    check = 0;
+                    textBox3.Text = string.Format("{0:0.00}", res);
+                }
+                else if (res > 40)
+                {
+                    ndf -= 0.5;
+                    label7.Text = Convert.ToString(ndf);
+                    GetData();
+                    res = fuzz.Defuzzify();
+                    check = 0;
                     textBox3.Text = string.Format("{0:0.00}", res);
                 }
 
@@ -122,33 +125,6 @@ namespace FuzzyLogic
             dmi.Add(new MembershipFunction("IAGA", 32, 38, 38, 42)); //Increase a good amount
             dmi.Add(new MembershipFunction("IAWL", 40,47,47,52)); ; //Increase a whole lot
             DMI = new LinguisticVariable("DMI", dmi);
-            
-
-            /*wind = new MembershipFunctionCollection();
-            wind.Add(new MembershipFunction("OPPOSITE", -2.0, -0.5, -0.5, 0));
-            wind.Add(new MembershipFunction("NEUTRAL", -0.1,0.9,0.9,1.1));
-            wind.Add(new MembershipFunction("PARALLEL", 1.0,1.5,1.5,1.9));
-            dWind = new LinguisticVariable("Wind", wind);
-
-            altitude = new MembershipFunctionCollection();
-            altitude.Add(new MembershipFunction("LOW", 0.0,1.0, 1.0, 2.3));
-            altitude.Add(new MembershipFunction("OK", 2.0, 3.0, 3.0, 3.7));
-            altitude.Add(new MembershipFunction("HIGH", 3.5, 4.3, 4.3, 4.9));
-            dAltitude = new LinguisticVariable("Altitude", altitude);
-
-            speed = new MembershipFunctionCollection();
-            speed.Add(new MembershipFunction("SLOW", 0.0, 1.8,2.5,3.0));
-            speed.Add(new MembershipFunction("FINE", 2.9,4.2,5.5,6.0));
-            speed.Add(new MembershipFunction("FAST", 5.8,6.5,8.1,9.0));
-            dSpeed = new LinguisticVariable("Speed", speed);
-
-            land = new MembershipFunctionCollection();
-            land.Add(new MembershipFunction("UNABLE", 0.0, 0.5, 0.5, 1.0));
-            land.Add(new MembershipFunction("COULD", 0.8, 1.3, 1.5, 1.7));
-            land.Add(new MembershipFunction("SHOULD", 1.6, 2.3, 2.5, 3.0));
-            dLand = new LinguisticVariable("Land", land);*/
-
-
 
         }
 
@@ -177,15 +153,6 @@ namespace FuzzyLogic
 
         public void GetData()
         {
-            /*dWind.InputValue = Convert.ToDouble(textBox2.Text);
-            //dWind.Fuzzify("NEUTRAL");
-
-            dAltitude.InputValue = Convert.ToDouble(textBox1.Text);
-            //dAltitude.Fuzzify("OK");
-
-            dSpeed.InputValue = Convert.ToDouble(textBox3.Text);
-            //dSpeed.Fuzzify("FINE");*/
-
             NDF.InputValue = ndf;
             CBW.InputValue = cbw;
 

@@ -8,3 +8,13 @@ D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic-master\obj\Debug\Fuzzy
 D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic-master\obj\Debug\FuzzyLogic.csproj.CoreCompileInputs.cache
 D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic-master\obj\Debug\FuzzyLogic.exe
 D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic-master\obj\Debug\FuzzyLogic.pdb
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\bin\Debug\FuzzyLogic.exe.config
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\bin\Debug\FuzzyLogic.exe
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\bin\Debug\FuzzyLogic.pdb
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\obj\Debug\FuzzyLogic.csprojAssemblyReference.cache
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\obj\Debug\FuzzyLogic.Form1.resources
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\obj\Debug\FuzzyLogic.Properties.Resources.resources
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\obj\Debug\FuzzyLogic.csproj.GenerateResource.cache
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\obj\Debug\FuzzyLogic.csproj.CoreCompileInputs.cache
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\obj\Debug\FuzzyLogic.exe
+D:\______PERSONALFOLDERS______\joyang\codes\c#\FuzzyLogic_ImprovingMilkYields\obj\Debug\FuzzyLogic.pdb
